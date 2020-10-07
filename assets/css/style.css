@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700&display=swap');
 
-/*------- BASE CSS STYLES -------*/
+/*--------------------- BASE CSS STYLES ---------------------*/
 *,
 *::before,
 *::after {
@@ -24,6 +24,10 @@ html {
     background-color: #fff;
 }
 
+.bg-color-personal-info {
+    background-color: #f4f4f4;
+}
+
 .color-home {
     background-color: #e67e22;
 }
@@ -40,13 +44,17 @@ html {
     background-color: #525252;
 }
 
-/*------- SPECIAL PADDINGS/MARGINS/TEXT ------- */
+/*--------------------- SPECIAL PADDINGS/MARGINS/TEXT --------------------- */
 
 h1,
 h2,
 h3,
 h4 {
     margin: 0;
+}
+
+p {
+    font-size: 1.5rem;
 }
 
 .uppercase {
@@ -80,7 +88,7 @@ h4 {
     margin-bottom: 4rem;
 }
 
-/*------- HEADING ------- */
+/*--------------------- HEADING --------------------- */
 .heading {
     margin-left: 5rem;
 }
@@ -159,7 +167,7 @@ h4 {
     letter-spacing: .2rem;
 }
 
-/*------- HOVER.CSS ------- */
+/*--------------------- HOVER.CSS --------------------- */
 
 .hvr-sweep-to-bottom:before {
     background-color: rgb(0, 0, 0, .2);
@@ -179,7 +187,7 @@ footer {
     padding: 2rem;
 }
 
-/*------- THREE REASONS ------- */
+/*--------------------- THREE REASONS --------------------- */
 
 .three-reasons-icon {
     font-size: 2.8rem;
@@ -221,4 +229,62 @@ footer {
 
 .social-links li a i:hover {
     background-color: #e67e22;
+}
+
+/*--------------------- PERSONAL INFO --------------------- */
+
+.personal-info-item {
+    margin-bottom: 2rem;
+    display: block;
+    clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: .8rem;
+    display: inline-block;
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;
+}
+
+.personal-info-item .key {
+    width: 30%;
+    margin-right: 2.1rem;
+    padding-top: .2rem;
+    vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+}
+
+.personal-info-item .value {
+    position: relative;
+    width: 60%;
+    
+}
+
+/*--------------------- SKILLS --------------------- */
+
+.progress {
+    position: relative;
+    height: 2.5rem;
+    margin-bottom: .4rem;
+}
+
+.progress-type {
+    position: absolute;
+    left: 0px;
+    font-weight: 400;
+    padding: .5rem 4rem .6rem 1rem;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+    font-size: 1rem;
+}
+
+.progress-section {
+    margin: 4rem 2rem;
 }
