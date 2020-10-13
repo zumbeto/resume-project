@@ -32,6 +32,10 @@ html {
     background-color: #9b59b6;
 }
 
+.bg-color-contact {
+    background-color: #fff;
+}
+
 .color-home {
     background-color: #e67e22;
 }
@@ -340,4 +344,38 @@ footer {
 
 .history-item {
     margin-bottom: 3rem;
+}
+
+/*--------------------------- CONTACT FORM -----------------------*/
+
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.center-form {
+    padding-top: 1rem;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    color: #fafafa;
+    background-color: #e84610;
+}
+
+/*--------------------------- MEDIA QUERIES -----------------------*/
+
+@media(min-width: 992px) {
+
+    .center-form {
+        padding-top: 3rem;
+        min-height: 24rem;
+        margin: 0 auto;
+        max-width: 50%;
+    }
 }
